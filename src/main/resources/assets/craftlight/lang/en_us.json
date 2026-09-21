@@ -1,0 +1,19 @@
+{
+  "container.craftlight": "Craftlight",
+  "craftlight.search": "Search learned recipes\u2026",
+  "craftlight.known": "LEARNED RECIPES",
+  "craftlight.empty": "No learned recipes match. Discover ingredients to unlock more.",
+  "craftlight.table.yes": "\u25c6 Crafting table in reach",
+  "craftlight.table.no": "\u25c7 Inventory crafting \u00b7 2\u00d72",
+  "craftlight.controls": "Click: craft once\nShift-click: craft a stack\nRight-click: preview recipe",
+  "craftlight.tooltip.craft": "Click: craft \u00b7 Shift-click: stack \u00b7 Right-click: preview",
+  "craftlight.tooltip.station": "Use its normal station to make this",
+  "craftlight.tooltip.table": "Requires a crafting table in reach",
+  "craftlight.status.0": "Uses ingredients from your inventory.",
+  "craftlight.status.1": "You have not learned that recipe.",
+  "craftlight.status.2": "Move near a crafting table, then reopen.",
+  "craftlight.status.3": "Missing usable ingredients.",
+  "craftlight.status.4": "Not enough room for this result.",
+  "craftlight.status.5": "Crafted into your inventory.",
+  "craftlight.status.6": "Use this recipe\u2019s normal station."
+}

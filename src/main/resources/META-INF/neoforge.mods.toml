@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="AGPL-3.0-or-later"
+[[mods]]
+modId="craftlight"
+version="${version}"
+displayName="Craftlight"
+authors="Rusty Shackleford and nfx"
+description="A searchable survival crafting browser for recipes you have learned."
+[[dependencies.craftlight]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.248,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.craftlight]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
