@@ -1,6 +1,6 @@
 # Craftlight
 
-Version 0.1.0, local and unreleased. Minecraft 1.21.1, NeoForge 21.1.248, Java 21.
+Version 0.1.0. Minecraft 1.21.1, NeoForge 21.1.248, Java 21.
 
 Rusty requested a lightweight Creative-style Survival crafting browser restricted
 to learned recipes. They chose normal ingredient consumption and a nearby table
@@ -19,4 +19,12 @@ E-inventory/tab/browser route under NVIDIA/Iris/Complementary, including a compa
 layout. See [evidence](../devtools/verification/craftlight.md). Independent multiplayer
 and complete-pack compatibility have not been exercised for this new mod.
 
-Publication, pack assembly and deployment await Rusty's explicit release instruction.
+Rusty authorized publication, pack assembly and deployment on September 20, 2026.
+
+## Release authorization — September 20, 2026
+
+Rusty requested: "release it all, 2 minute server warning". Version 0.1.0 is
+authorized for public source/jar publication and pack 1.54.0 deployment. The clean
+build passed 4 JUnit tests, 14 real-server GameTests and the complete
+GPU shader booth. See [release verification](../devtools/verification/release-0.1.0.md).
+Earlier release holds are superseded for this version.

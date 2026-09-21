@@ -35,8 +35,8 @@ nearby storage. Creative keeps its normal inventory.
 Install Craftlight on **both client and server**, with Java 21 and NeoForge. No
 recipe viewer, shader mod or other library is required.
 
-**0.1.0 is locally verified and unreleased.** No publication, pack update or server
-deployment has been authorized.
+**0.1.0** is the first release. Download it from
+[GitHub Releases](https://github.com/the-rusty-shackleford/minecraft-craftlight/releases/tag/v0.1.0).
 
 [Inventory tabs](devtools/verification/craftlight/inventory-tabs.png) ·
 [Recipe browser](devtools/verification/craftlight/browser.png) ·
@@ -71,3 +71,5 @@ checks. They are not bundled or required for ordinary play.
 Design decisions are in the [project store](knowledge/PROJECT.md).
 
 Copyright Rusty Shackleford and nfx. AGPL-3.0-or-later.
+
+Clean release results: [version 0.1.0](devtools/verification/release-0.1.0.md).
