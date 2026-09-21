@@ -37,6 +37,7 @@ recipe viewer, shader mod or other library is required.
 
 **0.1.0** is the first release. Download it from
 [GitHub Releases](https://github.com/the-rusty-shackleford/minecraft-craftlight/releases/tag/v0.1.0).
+Deployed in shared pack **1.54.0**; use **Update Pack** in Prism to install it.
 
 [Inventory tabs](devtools/verification/craftlight/inventory-tabs.png) ·
 [Recipe browser](devtools/verification/craftlight/browser.png) ·
