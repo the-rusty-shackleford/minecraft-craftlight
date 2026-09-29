@@ -47,6 +47,18 @@ public final class CraftingGameTests {
             craft(p,"minecraft:oak_planks",false);
             h.assertTrue(count(p,Items.OAK_LOG)==2&&count(p,Items.OAK_PLANKS)==4,"one recipe costs one log and yields four planks");});
     }
+    /** Carried D-0004: Craftlight crafts through vanilla's placement, which takes from a carried
+     * bag when the inventory has none, so the bag's logs make planks with no change here. The bag
+     * is Backpacks+'s by registry id (loaded on the gametest server), in a pocket, not worn. */
+    @GameTest(template="arena") public void aRecipeTakesItsIngredientsFromACarriedBag(GameTestHelper h) {
+        player(h,false,p->{learn(p,"minecraft:oak_planks");
+            var bag=new ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(ResourceLocation.parse("backpacksplus:basic_backpack")));
+            bag.set(net.minecraft.core.component.DataComponents.CONTAINER,net.minecraft.world.item.component.ItemContainerContents.fromItems(List.of(new ItemStack(Items.OAK_LOG,3))));
+            p.getInventory().setItem(9,bag);
+            craft(p,"minecraft:oak_planks",false);
+            int logs=p.getInventory().getItem(9).getOrDefault(net.minecraft.core.component.DataComponents.CONTAINER,net.minecraft.world.item.component.ItemContainerContents.EMPTY).stream().filter(s->s.is(Items.OAK_LOG)).mapToInt(ItemStack::getCount).sum();
+            h.assertTrue(logs==2&&count(p,Items.OAK_PLANKS)==4,"one log out of the bag, four planks in the inventory: logs "+logs+" planks "+count(p,Items.OAK_PLANKS));});
+    }
     @GameTest(template="arena") public void stackActionStopsAtOneOutputStack(GameTestHelper h) {
         player(h,false,p->{learn(p,"minecraft:oak_planks");p.getInventory().setItem(0,new ItemStack(Items.OAK_LOG,32));
             craft(p,"minecraft:oak_planks",true);

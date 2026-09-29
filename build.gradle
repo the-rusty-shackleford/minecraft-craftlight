@@ -77,6 +77,10 @@ dependencies {
     testImplementation sourceSets.domain.output
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.9.2'
+    // Backpacks+, and the Carried protocol nested in it, on the gametest server only: Craftlight
+    // crafts through vanilla's placement, which Carried lets take from a carried bag (Carried
+    // D-0004), and a test proves it here. Never bundled; Craftlight itself does not change.
+    gametestRuntimeOnly files('../minecraft-backpacks-plus/build/libs/backpacksplus-0.6.0.jar')
 }
 tasks.named('test', Test) { useJUnitPlatform() }
 jar { from sourceSets.domain.output }
