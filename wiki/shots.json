@@ -1,0 +1,4 @@
+{"shots": [
+  {"from": "run/booth/screenshots/craftlight-00-inventory-tabs.png", "to": "img/tabs.webp", "crop": [460, 130, 820, 530], "screen": true},
+  {"from": "run/booth/screenshots/craftlight-01-browser.png", "to": "img/browser.webp", "crop": [115, 70, 1165, 640], "screen": true}
+]}
